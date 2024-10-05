@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Plus Jakarta Sans";
+    background-color: #e0def782;
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 0 5px;
+    margin: 0px auto;
+    @media(max-width: 1200px){
+        width: 1050px;
+    }
+    @media(max-width: 1050px){
+        width: 990px;
+        padding: 0 2px;
+    }
+    @media(max-width: 990px){
+        width: 100%;
+        padding: 0 2px;
+    }
+}
+
+@import "header";
+.page{
+    margin-top: 72px;
+    @import "banner";
+    @import "home";
+    @import "shop";
+    @import "deal";
+    @import "contact";
+}
+@import "footer";
+.section{
+    margin: 20px auto;
+}

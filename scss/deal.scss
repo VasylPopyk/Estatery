@@ -1,0 +1,161 @@
+.deal{
+    background-color: #100A55;
+    .deal_content{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .deal_head{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 32px 0;
+            @media(max-width: 680px){
+                margin: 16px 0;
+                flex-direction: column;
+                justify-content: center;
+                h1{font-size: 28px;}
+                p{font-size: 14px;}
+            }
+            h1{
+                font-size: 40px;
+                color: white;
+                font-weight: 600;
+                max-width: 444px;
+                span{color: #7065F0;}
+            }
+            p{
+                max-width: 406px;
+                color: white;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 160%;
+            }
+        }
+        .deal_swiper{
+            margin: 32px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: scroll; /* Включає горизонтальну прокрутку */
+            white-space: nowrap;
+
+            &::-webkit-scrollbar {
+                height: 10px; /* Висота смуги прокрутки */
+              }
+            
+              &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 10px;
+              }
+            
+              &::-webkit-scrollbar-thumb {
+                background-color: #888;
+                border-radius: 10px;
+                border: 2px solid #f1f1f1;
+              }
+            
+              &::-webkit-scrollbar-thumb:hover {
+                background-color: #555;
+              }
+            
+              /* Стилізація смуги прокрутки для Firefox */
+              scrollbar-width: thin;
+              scrollbar-color: #888 #f1f1f1;
+            .deal_swiper_item{
+                width: 532px;
+                height: 194px;
+                padding: 32px;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                border-radius: 10px;
+                &:not(:last-child){margin-right: 32px;}
+                &:nth-child(1){background-color: rgba(255, 255, 255, 0.431);}
+                &:nth-child(2){background-color: white;}
+                &:nth-child(3){background-color: #7065F0;}
+                .image{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    &:nth-child(1){
+                        background-color: #100A55;
+                    }
+                }
+                .light-white{
+                    background-color: #E8E6F9;
+                }
+                .white{
+                    background-color: white;
+                }
+                .deal_swiper_item_text{
+                    max-width: 385px;
+                    margin-left: 24px;
+                    color: white;
+                    .black{
+                        color: black;
+                    }
+                    p{
+                        max-width: 385px;
+                        color: white;
+                        font-size: 16px;
+                        line-height: 160%;
+                    }
+                }
+            }
+        }
+        .numbers{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .numbers_item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 52px;
+                h1{
+                    color: white;
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+                p{
+                    color: white;
+                    font-size: 16px;
+                    margin: 0;
+                }
+            }
+            .numbers_blok{
+                content: "";
+                height: 64px;
+                width: 2px;
+                background-color: white;
+            }
+            @media(max-width: 680px){
+                flex-direction: column;
+                .numbers_item{
+                    margin: 24px 5px;
+                }
+                .numbers_blok{
+                    width: 48px;
+                    height: 2px;
+                }
+            }
+        }
+    }
+}
